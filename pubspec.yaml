@@ -1,7 +1,7 @@
 name: rc_spacio
 description: "A Flutter package for custom Row and Column widgets with optional top, bottom, left, right, and internal spacing."
 version: 0.0.1
-homepage: https://github.com/rodrigocarvalho/rc_spacio
+homepage: https://github.com/Dipak677/rc_spacio.git
 
 environment:
   sdk: ^3.5.4
