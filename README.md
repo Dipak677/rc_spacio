@@ -135,6 +135,3 @@ This package includes comprehensive test cases to ensure correct spacing behavio
 ## License
 
 This package is licensed under the BSD 3-Clause License. See the [LICENSE](https://opensource.org/license/bsd-3-clause) file for more information.
-
-# rc_spacio
-# rc_spacio
