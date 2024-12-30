@@ -3,8 +3,8 @@
 [![pub package](https://img.shields.io/pub/v/rc_spacio.svg)](https://pub.dev/packages/rc_spacio)
 
 <p style="display: flex; gap: 10px;">
-  ![SpacioColumn Example](https://raw.githubusercontent.com/Dipak677/rc_spacio/refs/heads/main/spacio_row.png)
-  ![SpacioColumn Example](https://raw.githubusercontent.com/Dipak677/rc_spacio/refs/heads/main/spacio_column.png)
+    <img src="https://raw.githubusercontent.com/Dipak677/rc_spacio/refs/heads/main/spacio_row.png?raw=true" height="600px">
+    <img src="https://raw.githubusercontent.com/Dipak677/rc_spacio/refs/heads/main/spacio_column.png?raw=true" height="600px">
 </p>
 
 ---
