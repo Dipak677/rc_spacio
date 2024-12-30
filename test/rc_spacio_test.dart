@@ -4,7 +4,8 @@ import 'package:rc_spacio/rc_spacio.dart'; // Update if your package path is dif
 
 void main() {
   group('SpacioColumn Tests', () {
-    testWidgets('SpacioColumn should render children with top space', (WidgetTester tester) async {
+    testWidgets('SpacioColumn should render children with top space',
+        (WidgetTester tester) async {
       // Arrange
       const topSpace = 20.0;
 
@@ -30,7 +31,8 @@ void main() {
       expect(sizedBox.height, topSpace);
     });
 
-    testWidgets('SpacioColumn should render children with internal spacing', (WidgetTester tester) async {
+    testWidgets('SpacioColumn should render children with internal spacing',
+        (WidgetTester tester) async {
       // Arrange
       const internalSpacing = 10.0;
 
@@ -49,10 +51,12 @@ void main() {
       // Assert
       final paddingWidgets = tester.widgetList<Padding>(find.byType(Padding));
       expect(paddingWidgets.length, 2); // Each child should have padding
-      expect(paddingWidgets.first.padding.vertical, const EdgeInsets.symmetric(vertical: internalSpacing).vertical);
+      expect(paddingWidgets.first.padding.vertical,
+          const EdgeInsets.symmetric(vertical: internalSpacing).vertical);
     });
 
-    testWidgets('SpacioColumn should render children with bottom space', (WidgetTester tester) async {
+    testWidgets('SpacioColumn should render children with bottom space',
+        (WidgetTester tester) async {
       // Arrange
       const bottomSpace = 15.0;
 
@@ -70,7 +74,8 @@ void main() {
 
       // Assert
       final bottomSpacingFinder = find.byWidgetPredicate(
-        (widget) => widget is SizedBox && widget.key == const Key('bottomSpacing'),
+        (widget) =>
+            widget is SizedBox && widget.key == const Key('bottomSpacing'),
       );
 
       expect(bottomSpacingFinder, findsOneWidget);
@@ -80,7 +85,8 @@ void main() {
   });
 
   group('SpacioRow Tests', () {
-    testWidgets('SpacioRow should render children with left space', (WidgetTester tester) async {
+    testWidgets('SpacioRow should render children with left space',
+        (WidgetTester tester) async {
       // Arrange
       const leftSpace = 20.0;
 
@@ -98,7 +104,8 @@ void main() {
 
       // Assert
       final leftSpacingFinder = find.byWidgetPredicate(
-        (widget) => widget is SizedBox && widget.key == const Key('leftSpacing'),
+        (widget) =>
+            widget is SizedBox && widget.key == const Key('leftSpacing'),
       );
 
       expect(leftSpacingFinder, findsOneWidget);
@@ -106,7 +113,8 @@ void main() {
       expect(sizedBox.width, leftSpace);
     });
 
-    testWidgets('SpacioRow should render children with internal spacing', (WidgetTester tester) async {
+    testWidgets('SpacioRow should render children with internal spacing',
+        (WidgetTester tester) async {
       // Arrange
       const internalSpacing = 10.0;
 
@@ -125,10 +133,12 @@ void main() {
       // Assert
       final paddingWidgets = tester.widgetList<Padding>(find.byType(Padding));
       expect(paddingWidgets.length, 2); // Each child should have padding
-      expect(paddingWidgets.first.padding.horizontal, const EdgeInsets.symmetric(horizontal: internalSpacing).horizontal);
+      expect(paddingWidgets.first.padding.horizontal,
+          const EdgeInsets.symmetric(horizontal: internalSpacing).horizontal);
     });
 
-    testWidgets('SpacioRow should render children with right space', (WidgetTester tester) async {
+    testWidgets('SpacioRow should render children with right space',
+        (WidgetTester tester) async {
       // Arrange
       const rightSpace = 15.0;
 
@@ -146,7 +156,8 @@ void main() {
 
       // Assert
       final rightSpacingFinder = find.byWidgetPredicate(
-        (widget) => widget is SizedBox && widget.key == const Key('rightSpacing'),
+        (widget) =>
+            widget is SizedBox && widget.key == const Key('rightSpacing'),
       );
 
       expect(rightSpacingFinder, findsOneWidget);
